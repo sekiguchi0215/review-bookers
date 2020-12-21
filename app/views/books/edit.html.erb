@@ -1,13 +1,3 @@
-<p>
-	<% if @book.errors.any? %>
-		<h4><%= @book.errors.count %>errors</h4>
-		<ul>
-			<% @book.errors.full_messages.each do |message| %>
-				<li><%= message %></li>
-			<% end %>
-		</ul>
-	<% end %>
-</p>
 
 <h1>Editing Book</h1>
 
