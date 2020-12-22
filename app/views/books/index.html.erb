@@ -3,11 +3,19 @@
 		<h4><%= @book.errors.count %>errors</h4>
 		<ul>
 			<% @book.errors.full_messages.each do |message| %>
-				<li><%= message %></li>
+				<li style="color: red; list-style: none;"><%= message %></li>
 			<% end %>
 		</ul>
 	<% end %>
 </p> 
+
+<p>
+	<% if flash[:notice] %>
+		<div class="flash" style="color: green">
+			<%= flash[:notice] %>
+		</div>
+	<% end %>
+</p>
 
 <h1>Books</h1>
 

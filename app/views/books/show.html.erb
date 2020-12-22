@@ -1,4 +1,13 @@
 <p>
+	<% if flash[:show_notice] %>
+		<div class="flash" style="color: green">
+			<%= flash[:show_notice] %>
+		</div>
+	<% end %>
+</p>
+
+
+<p>
 	<strong>Title:</strong> <%= @book.title %>
 </p>
 <p>
